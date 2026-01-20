@@ -1,0 +1,81 @@
+.page {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background: #282828;
+    background: linear-gradient(179deg, rgba(40, 40, 40, 1) 0%, rgba(80, 80, 80, 1) 60%);
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    height:64px;
+    width:100%;
+    background: #282828;
+}
+
+.top_logo_text {
+    display: flex;
+    flex: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Quartzo';
+    letter-spacing: 1px;
+    color: #F4F4F4;
+    font-size: xx-large;
+    margin-left: 24px;
+    background: linear-gradient(180deg,rgba(254, 254, 234, 1) 0%, rgba(121, 164, 113, 1) 55%);
+    background-clip: text;
+    color: transparent;
+}
+
+.top_login_button_container{
+    height: 40%;
+    width: 6%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+.top_register_button_container {
+    height: 40%;
+    width: 6%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 24px;
+}
+
+.top_login_button {
+    border-radius: 24px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    height: 100%;
+    width: 100%;
+}
+
+.top_register_button {
+    border-radius: 24px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    height: 100%;
+    width: 100%;
+}
+
+.top_login_button:hover {
+    transition: transform 0.05s;
+    transform: scale(113%);
+}
+
+.top_register_button:hover {
+    transition: transform 0.05s;
+    transform: scale(113%);
+}
+
+.page_flex {
+    display: flex;
+    flex: auto;
+}

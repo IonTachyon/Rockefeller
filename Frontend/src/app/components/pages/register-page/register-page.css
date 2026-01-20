@@ -1,0 +1,59 @@
+.register-page-form {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 360px;
+    margin: auto;
+    border-radius: 12px;
+    color: whitesmoke;
+}
+
+.register-page-textbox {
+    display: flex;
+    width: 55%;
+    margin-left: auto;
+    margin-right: 48px;
+}
+
+.register-page-button {
+    display: flex;
+    width: 45%;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.register-page-main-label {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.register-page-form-label {
+    display: flex;
+    margin-left: 16px;
+}
+
+.register-page-button-label {
+    display: flex;
+    margin: auto;
+}
+
+.register-page-container-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.register-page-register-hyperlink {
+    display: flex;
+    margin: auto;
+    color: white;
+}

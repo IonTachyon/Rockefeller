@@ -1,0 +1,35 @@
+<app-page>
+    <div class="dashboard-full-container">
+        <div class="dashboard-account-container">
+            @for (account of accounts; track account.id) {
+                <div (click)="select_account(account.id)" [ngClass]="{'dashboard-account': selected_account != account.id, 'dashboard-account-selected': selected_account == account.id}">
+                    <p class="dashboard-main-selection-text">{{account.name}}</p>
+                </div>
+            }
+        </div>
+        <div class="dashboard-main-container">
+            <div class="dashboard-main-selection-container">
+                <div (click)="select_option(0)" id="Overview" [ngClass]="{'dashboard-main-selection-selected': selected_option == 0, 'dashboard-main-selection': selected_option != 0}">
+                    <p class="dashboard-main-selection-text">Overview</p>
+                </div>
+                <div (click)="select_option(1)" id="Owned" [ngClass]="{'dashboard-main-selection-selected': selected_option == 1, 'dashboard-main-selection': selected_option != 1}">
+                    <p class="dashboard-main-selection-text">View Owned Stock</p>
+                </div>
+                <div (click)="select_option(2)" id="Search" [ngClass]="{'dashboard-main-selection-selected': selected_option == 2, 'dashboard-main-selection': selected_option != 2}">
+                    <p class="dashboard-main-selection-text">Browse Stock Market</p>
+                </div>
+            </div>
+            <div class="dashboard-main-display-container">
+                @if (selected_option == 0) {
+                    <app-overview class="dashboard-main-display" />
+                }
+                @if (selected_option == 1) {
+                    <app-view-stocks class="dashboard-main-display" />
+                }
+                @if (selected_option == 2) {
+                    <app-browse-stocks class="dashboard-main-display" />
+                }
+            </div>
+        </div>
+    </div>
+</app-page>

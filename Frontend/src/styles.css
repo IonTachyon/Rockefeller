@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Quartzo';
+    src: url('/font/Quartzo/QuartzoBold-W9lv.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.color_background_base{
+    background-color: #F4F4F4;
+}
+
+.color_background_dark {
+    background-color: #113F67;
+}
+
+.color_background_mid {
+    background-color: #34699A;
+}
+
+.color_background_light {
+    background-color: #58A0C8;
+}
+
+.color_text_base {
+    color: #F4F4F4;
+}
+
+.color_text_dark {
+    color: #113F67;
+}
+
+.color_text_mid {
+    color: #34699A
+}
+
+.color_text_light {
+    color: #58A0C8;
+}
+
+.color_border_base {
+    border-color: #F4F4F4;
+}
+
+.color_border_dark {
+    border-color: #113F67;
+}
+
+.color_border_mid {
+    border-color: #34699A
+}
+
+.color_border_light {
+    border-color: #58A0C8;
+}
+
+.page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: auto;
+}
+
+app-root { 
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

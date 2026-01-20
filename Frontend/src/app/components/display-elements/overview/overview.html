@@ -1,0 +1,18 @@
+<div class="overview-container">
+    <div class="overview-stats-container">
+        <div class="overview-stats-current-value">
+            <p [ngClass]="{'overview-stats-green': percent_gain >=0, 'overvew-stats-red:': percent_gain < 0}">Current Value: {{current_value}}</p>
+            @if(percent_gain >= 0) {
+                <p class="overview-stats-green"> (+{{percent_gain}}%)</p>
+            }
+            @if(percent_gain < 0) {
+                <p class="overvew-stats-red"> (-{{percent_gain}}%)</p>
+            }
+        </div>
+        <p>Value of stock on purchase: {{purchase_value}}</p>
+        <p>Total gain: {{percent_gain}}</p>
+    </div>
+    <div class="overview-graph-container">
+        <ag-charts class="overview-main-container" [options]="chartOptions"></ag-charts>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="view-stocks-container">
+    @for (ticker of pieChartData; track ticker.tickerID) {
+        <div class="view-stocks-ticker-container">
+            <p>{{ticker.symbol}} - {{ticker.name}}</p>
+            <p>Owned: {{ticker.total_purchased - ticker.total_sold}}</p>
+            <p>Stock price: {{ticker.current_price}}</p>
+            <p>Current value: {{ticker.current_price * (ticker.total_purchased - ticker.total_sold)}}</p>
+            <p>Gain: {{ticker.gain}}</p>
+            <div class="view-stocks-buy-sell">
+                <div style="width: 50%;">
+                    <button style="margin: auto;">Buy</button>
+                </div>
+                <div style="width: 50%;">
+                    <button style="margin: auto">Sell</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

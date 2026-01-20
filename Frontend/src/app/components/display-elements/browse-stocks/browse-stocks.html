@@ -1,0 +1,13 @@
+<div class="view-stocks-container">
+    @for (ticker of tickers; track ticker.id) {
+        <div class="view-stocks-ticker-container">
+            <p>{{ticker.symbol}} - {{ticker.name}}</p>
+            <p>Stock price: {{ticker.price}}</p>
+            <div class="view-stocks-buy-sell">
+                <div style="width: 50%;">
+                    <button style="margin: auto;">Buy</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

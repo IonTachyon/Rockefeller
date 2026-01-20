@@ -1,0 +1,30 @@
+.view-stocks-container {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 100%;
+    background-color: antiquewhite;
+    margin-left: auto; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.view-stocks-ticker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    height: fit-content;
+    background-color: darkgrey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.view-stocks-buy-sell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}

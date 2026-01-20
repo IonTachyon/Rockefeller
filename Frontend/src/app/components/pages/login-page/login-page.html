@@ -1,0 +1,24 @@
+<app-page>
+    <div class="login-page-form color_background_mid">
+        <p class="login-page-main-label">Login</p>
+        
+        <div class="login-page-container-div">
+            <label class="login-page-form-label">Username: </label>
+            <input class="login-page-textbox" #usernameinput type="text" (input)="username = usernameinput.value"> 
+        </div>
+
+        <div class="login-page-container-div">
+            <label class="login-page-form-label">Password: </label>
+            <input class="login-page-textbox" #passwordinput type="text" (input)="password = passwordinput.value">
+        </div>
+
+        <button class="login-page-button" (click)="login()">
+            <p class="login-page-button-label">Login</p>
+        </button>
+
+        <div class="login-page-container-div">
+            <a href="" routerLink="/register" class="login-page-register-hyperlink">Not a user? Register here!</a>
+        </div>
+
+    </div>
+</app-page> 

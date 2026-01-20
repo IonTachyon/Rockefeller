@@ -1,0 +1,43 @@
+.overview-container {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.overview-stats-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+.overview-graph-container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    background-color: slategray;
+}
+
+.overview-stats-current-value {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    font-size: x-large;
+}
+
+.overview-stats-green {
+    margin-left: 4px;
+    color: green;
+}
+
+.overview-stats-red {
+    margin-left: 4px;
+    color: red;
+}

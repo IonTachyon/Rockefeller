@@ -1,0 +1,59 @@
+.login-page-form {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 360px;
+    margin: auto;
+    border-radius: 12px;
+    color: whitesmoke;
+}
+
+.login-page-textbox {
+    display: flex;
+    width: 55%;
+    margin-left: auto;
+    margin-right: 48px;
+}
+
+.login-page-button {
+    display: flex;
+    width: 45%;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.login-page-main-label {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.login-page-form-label {
+    display: flex;
+    margin-left: 16px;
+}
+
+.login-page-button-label {
+    display: flex;
+    margin: auto;
+}
+
+.login-page-container-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.login-page-register-hyperlink {
+    color:white;
+    display: flex;
+    margin: auto;
+}

@@ -1,0 +1,92 @@
+.dashboard-full-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.dashboard-account-container {
+    display: flex;
+    width: 80%;
+    height: 10%;
+    background-color: gray;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: end;
+}
+
+.dashboard-account-selected {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background-color: skyblue;
+}
+.dashboard-account {
+    display: flex;
+    width: 20%;
+    height: 75%;
+    background-color: silver;
+}
+
+.dashboard-main-container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: slategray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashboard-main-selection-container {
+    display: flex;
+    width: 20%;
+    height: 95%;
+    background-color:azure;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    flex-direction: column;
+}
+
+.dashboard-main-selection {
+    display: flex;
+    width: 90%;
+    height: 15%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.dashboard-main-selection-selected {
+    display: flex;
+    width: 94%;
+    height: 15%;
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.dashboard-main-selection-text {
+    margin: auto;
+    font-size: large;
+}
+
+.dashboard-main-display-container {
+    display: flex;
+    width: 76%;
+    height: 95%;
+    background-color:beige;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.dashboard-main-display {
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+

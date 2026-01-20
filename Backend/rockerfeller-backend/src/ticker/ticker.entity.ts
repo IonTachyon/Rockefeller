@@ -1,0 +1,25 @@
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm'
+import { User } from '../user/user.entity'
+import { Trade } from 'src/trade/trade.entity';
+
+@Entity()
+export class Ticker {
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column("varchar")
+    symbol: string;
+
+    @Column("bigint")
+    timestamp: number;
+
+    @Column("real")
+    price: number;
+
+    @Column("real")
+    volume: number;
+
+    @ManyToOne(() => Trade, (trade) => trade.ticker)
+    trades: Trade[];
+}
+

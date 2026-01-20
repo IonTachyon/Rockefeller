@@ -1,0 +1,14 @@
+<div class="page">
+    <div class="top color_background_base">
+            <a routerLink="/" href="" class="top_logo_text"> Rockerfeller </a>
+            <div class="top_login_button_container">
+                <button (click)="navigateToLogin()" class="top_login_button color_text_base color_background_light color_border_light">Login</button>
+            </div>
+            <div class="top_register_button_container">
+                <button (click)="navigateToRegister()" class="top_register_button color_text_base color_background_light color_border_light">Register</button>
+            </div>
+        </div>
+    <div class="page_flex">
+        <ng-content></ng-content>
+    </div>
+</div>

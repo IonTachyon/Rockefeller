@@ -1,0 +1,34 @@
+<app-page>
+    <div class="register-page-form color_background_mid">
+        <p class="register-page-main-label">Register to Rockerfeller</p>
+        
+        <div class="register-page-container-div">
+            <label class="register-page-form-label">Username: </label>
+            <input class="register-page-textbox" #usernameinput type="text" (input)="username = usernameinput.value"> 
+        </div>
+
+        <div class="register-page-container-div">
+            <label class="register-page-form-label">Full Name: </label>
+            <input class="register-page-textbox" #fullnameinput type="text" (input)="full_name = fullnameinput.value">
+        </div>
+
+        <div class="register-page-container-div">
+            <label class="register-page-form-label">Email: </label>
+            <input class="register-page-textbox" #emailinput type="text" (input)="email = emailinput.value"> 
+        </div>
+
+        <div class="register-page-container-div">
+            <label class="register-page-form-label">Password: </label>
+            <input class="register-page-textbox" #passwordinput type="text" (input)="password = passwordinput.value">
+        </div>
+
+        <button class="register-page-button" (click)="register()">
+            <p class="register-page-button-label">Register</p>
+        </button>
+
+        <div class="register-page-container-div">
+            <a routerLink="/login" href="" class="register-page-register-hyperlink">Already have an account? Login here!</a>
+        </div>
+
+    </div>
+</app-page> 
