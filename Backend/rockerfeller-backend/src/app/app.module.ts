@@ -10,19 +10,22 @@ import { Ticker } from 'src/ticker/ticker.entity';
 import { AccountModule } from 'src/account/account.module';
 import { TickerModule } from 'src/ticker/ticker.module';
 import { TradeModule } from 'src/trade/trade.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({envFilePath: 'dev.env', isGlobal: true}),
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
       port: 5432,
-      username: 'iontachyon',
-      password: 'testpassword11',
+      username: process.env.POSTGRES_USER,
+      password: process.env.POSTGRES_PASSWORD,
       database: 'rockerfeller',
       entities: [User, Account, Ticker, Trade],
       synchronize: true
-    }), UserModule, AccountModule, TickerModule, TradeModule
+    }), 
+    UserModule, AccountModule, TickerModule, TradeModule
   ],
   controllers: [AppController],
   providers: [AppService],
