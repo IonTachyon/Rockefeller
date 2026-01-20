@@ -7,7 +7,7 @@ export const selectTickers = createFeatureSelector<TickerState>('tickers');
 
 export const selectAllTickers = createSelector(selectTickers, (state) =>
   Object.values(state.entities)
-    .filter((ticker) => ticker != undefined)
-    .map((ticker) => ticker as Ticker)
+  .filter((ticker) => ticker != undefined)
+  .map((ticker) => ticker as Ticker)
 );
 

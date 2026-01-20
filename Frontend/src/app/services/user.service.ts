@@ -7,7 +7,7 @@ import { User } from '../entities/user.entity';
   providedIn: 'root',
 })
 export class UserService {
-  private apiUrl = 'http://localhost:3000/api/user';
+  private apiUrl = 'http://localhost:3000/user';
 
   constructor(private http: HttpClient) {}
 

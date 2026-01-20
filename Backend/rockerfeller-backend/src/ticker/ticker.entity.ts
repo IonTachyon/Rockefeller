@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm'
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, OneToMany } from 'typeorm'
 import { User } from '../user/user.entity'
 import { Trade } from 'src/trade/trade.entity';
 
@@ -10,6 +10,9 @@ export class Ticker {
     @Column("varchar")
     symbol: string;
 
+    @Column("varchar")
+    name: string;
+    
     @Column("bigint")
     timestamp: number;
 
@@ -19,7 +22,7 @@ export class Ticker {
     @Column("real")
     volume: number;
 
-    @ManyToOne(() => Trade, (trade) => trade.ticker)
+    @OneToMany(() => Trade, (trade) => trade.ticker)
     trades: Trade[];
 }
 

@@ -7,7 +7,7 @@ import { Ticker } from '../entities/ticker.entity';
   providedIn: 'root',
 })
 export class TickerService {
-  private apiUrl = 'http://localhost:3000/api/Ticker';
+  private apiUrl = 'http://localhost:3000/ticker';
 
   constructor(private http: HttpClient) {}
 

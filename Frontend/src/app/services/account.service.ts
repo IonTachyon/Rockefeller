@@ -7,7 +7,7 @@ import { Account } from '../entities/account.entity';
   providedIn: 'root',
 })
 export class AccountService {
-  private apiUrl = 'http://localhost:3000/api/Account';
+  private apiUrl = 'http://localhost:3000/account';
 
   constructor(private http: HttpClient) {}
 

@@ -7,7 +7,7 @@ import { Trade } from '../entities/trade.entity';
   providedIn: 'root',
 })
 export class TradeService {
-  private apiUrl = 'http://localhost:3000/api/trade';
+  private apiUrl = 'http://localhost:3000/trade';
 
   constructor(private http: HttpClient) {}
 

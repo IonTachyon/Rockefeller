@@ -10,11 +10,6 @@ export const readTickerSuccess = createAction(
     props<{ticker: Ticker}>()
 )
 
-export const readTickerFailure = createAction(
-    'Load Ticker Failure',
-    props<{error: any}>()
-)
-
 export const readAllTickers = createAction(
     'Load All Tickers',
 )
@@ -22,9 +17,4 @@ export const readAllTickers = createAction(
 export const readAllTickersSuccess = createAction(
     'Load All Tickers Success',
     props<{tickers: Ticker[]}>()
-)
-
-export const readAllTickersFailure = createAction(
-    'Load All Tickers Failure',
-    props<{error: any}>()
 )
