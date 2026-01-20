@@ -1,0 +1,28 @@
+networks:
+    rockerfeller:
+        external: true
+        
+volumes:
+    postgres_data:
+        external: true
+        name: postgres_data
+        
+services:
+    postgres:
+        container_name: postgres
+        image: postgres
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_USER=iontachyon
+            - POSTGRES_PASSWORD=testpassword11
+        ports:
+            - "5432:5432"
+            
+        networks:
+            - rockerfeller
+            
+        
+
+
+
